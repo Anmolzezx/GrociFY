@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bg_stroke.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Border (Stroke) -->
+    <stroke
+        android:width="2dp"
+    android:color="#ffffff" />
+
+    <!-- Rounded corners (optional) -->
+    <corners android:radius="8dp" /> <!-- Corner radius (optional) -->
+</shape>

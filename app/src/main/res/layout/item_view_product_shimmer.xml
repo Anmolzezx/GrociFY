@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2.60dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:weightSum="1">
+
+        <!-- CardView 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvProduct1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_weight="0.5"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toStartOf="@+id/cvProduct2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!-- Your content for CardView 1 -->
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="13.00dp"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/ivImageSlider1"
+                    android:layout_width="160.00dp"
+                    android:layout_height="160.00dp"
+                    android:layout_marginBottom="8dp"
+                    app:iss_auto_cycle="false"
+                    android:background="#DDDDDD"
+                    app:iss_text_align="CENTER"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvProductTitle1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:background="#DDDDDD"
+                    android:textColor="@color/black"
+                    android:textSize="19.50sp"
+                    android:layout_marginBottom="4dp"/>
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvProductQuantity1"
+                    android:background="#DDDDDD"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#6F6F6F"
+                    android:textSize="15.60sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:background="#DDDDDD"
+                            android:layout_height="20dp"
+                            android:id="@+id/tvProductPrice1"
+                            android:textColor="@color/black"
+                            android:textSize="1.60sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/tvAdd1"
+                            android:layout_width="90.00dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="#DDDDDD"
+                            android:gravity="center"
+                            android:padding="5.20dp"
+                            android:textColor="@color/green"
+                            android:textSize="14.30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvProduct2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_weight="0.5"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cvProduct1">
+
+            <!-- Your content for CardView 2 -->
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="13.00dp"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/ivImageSlider"
+                    android:layout_width="160.00dp"
+                    android:layout_height="160.00dp"
+                    android:layout_marginBottom="8dp"
+                    app:iss_auto_cycle="false"
+                    android:background="#DDDDDD"
+                    app:iss_text_align="CENTER"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvProductTitle2"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:background="#DDDDDD"
+                    android:textColor="@color/black"
+                    android:textSize="19.50sp"
+                    android:layout_marginBottom="4dp"/>
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvProductQuantity2"
+                    android:background="#DDDDDD"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#6F6F6F"
+                    android:textSize="15.60sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:background="#DDDDDD"
+                            android:layout_height="20dp"
+                            android:id="@+id/tvProductPrice2"
+                            android:textColor="@color/black"
+                            android:textSize="1.60sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/tvAdd2"
+                            android:layout_width="90.00dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="#DDDDDD"
+                            android:gravity="center"
+                            android:padding="5.20dp"
+                            android:textColor="@color/green"
+                            android:textSize="14.30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GrociFY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_no_category">No category specified</string>
+    <string name="on_submit_msg">Check out your mailbox, you will receive an email containing link where you can reset your password</string>
+    <string name="default_web_client_id">385089708634-rp44a67c7lgqql0vrrl9h1uj740rlae3.apps.googleusercontent.com</string>
+
+
+</resources>
